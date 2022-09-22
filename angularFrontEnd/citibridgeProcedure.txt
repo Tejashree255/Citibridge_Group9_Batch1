@@ -1,0 +1,11 @@
+UPWAS
+---------------------------------------------------------------
+
+
+
+..........................................................................................................
+>after clicking login show content(sector component)
+>sector component(all sectors)
+>after clicking on sector show  all stocks
+>Provide option to save stocks
+>then logout button
