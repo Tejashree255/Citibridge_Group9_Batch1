@@ -1,0 +1,18 @@
+database name : sample
+
+table name : login_user
+Attributes : userId(PK) , Password
+Description:
+This table contains record of userIDS and respective Passwords.
+Data from this table will be used at the time of login to verify  userIDs and passwords.
+
+
+
+table name : users
+Attributes : ID(PK) , change , date ,name of company , current market price, symbol(ticker) , userId
+Description:
+This table contains records of stocks saved by users along with their userIDs.
+These userIDs can be used to fetch previously saved stocks by user.
+Data stored in this table will be persistent even if one closes the application.(Spring JPA is used for that)
+If this table is not present in the database initially then it will be created when user will  save the stock record
+automatically.
