@@ -1,0 +1,33 @@
+
+
+
+<div class="container" style="margin-left: 50px;margin-top: 50px;margin-bottom: 50px;">
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>ID</th>
+                    <th>CompanyName</th>
+                    <th>Symbol</th>
+                    <th>Percentage Growth over last 2 weeks</th>
+                    <th>Current Market Price</th>
+                    <th>Date and Time</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let stock of stockdata">
+                        <td>{{ stock.id}}</td>
+                        <td>{{ stock.name }}</td>
+                        <td>{{ stock.tickers }}</td>
+                        <td>{{ stock.change }}</td>
+                        <td>{{ stock.price }}</td>
+                        <td>{{ stock.date }}</td>
+                        <td>
+                          <button (click)="savestocks(stock.name)"  class="bl btn btn-success pull-right">save</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+  

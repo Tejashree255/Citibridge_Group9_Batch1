@@ -1,0 +1,30 @@
+<h2 *ngIf="hide" style="color:rgb(28, 0, 128);margin-left:58px;"> There are no stocks saved!</h2>
+<br>
+<h2 style="color:rgb(23, 23, 153);margin-left:58px ;"> Previously saved stocks by {{username}} :</h2>
+<div class="container" style="margin-left: 50px;margin-top: 50px;margin-bottom: 50px;">
+    <div *ngIf="datapresent" class="card">
+        
+<br>
+        <div  class="card-body">
+            <table  class="table table-striped">
+                <thead>
+                    <th>CompanyName</th>
+                    <th>Symbol</th>
+                    <th>Percentage Growth over last 2 weeks</th>
+                    <th>Current Market Price</th>
+                    <th>Date and Time</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let stock of stocks">
+                        <td>{{ stock.name }}</td>
+                        <td>{{ stock.tickers }}</td>
+                        <td>{{ stock.change }}</td>
+                        <td>{{ stock.price }}</td>
+                        <td>{{ stock.date }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+  
