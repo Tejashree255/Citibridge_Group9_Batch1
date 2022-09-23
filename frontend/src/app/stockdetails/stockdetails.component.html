@@ -1,0 +1,59 @@
+
+ <h1 style="margin-left: 5%;position: absolute;top: 10px;color:rgb(23, 23, 153);">Recommended Stocks</h1>
+<button type="button" class="back btn btn-success pull-right" (click)="gototasks()">back</button>
+<div class="container" style="margin-left: 50px;margin-top: 50px;margin-bottom: 100px;">
+    <div class="card">
+       
+        <div class="card-body">
+            
+            <table class="table table-striped">
+                
+                <thead>
+                    <th>ID</th>
+                    <th>CompanyName</th>
+                    <th>Symbol</th>
+                    <th>Percentage Growth</th>
+                    <th>Current Market Price (INR)</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let stock of stockdata">
+                        <td>{{ stock.id}}</td>
+                        <td>{{ stock.name }}</td>
+                        <td>{{ stock.tickers }}</td>
+                        <td>{{ stock.change }}</td>
+                        <td>{{ stock.price }}</td>
+                        <td>
+                          <button (click)="savestocks(stock.name);"  
+                          class="bl btn btn-success pull-right" 
+                          type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                          >save</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+  <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog first modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div *ngIf="saved" class="modal-body" >
+          Data saved Successfully!
+        </div>
+        <div *ngIf="savederr" class="modal-body" >
+            Data is already saved!
+        </div>
+      </div>
+    </div>
+  </div>
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Please Wait...</p>
+</ngx-spinner>

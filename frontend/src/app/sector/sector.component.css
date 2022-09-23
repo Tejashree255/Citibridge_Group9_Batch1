@@ -1,0 +1,48 @@
+.cards{
+    margin-left:10px;
+    padding-bottom: 70px;
+}
+.col{
+    margin-top: 30px;
+    margin-right:10px;
+    width:260px;
+}
+
+.last1{
+    margin-left: 115%;
+}
+
+.card{
+    height:130px;
+    border-radius: 5%;
+    /* border: 1px solid rgb(23, 23, 153);; */
+  box-shadow: rgba(23, 23, 153, 1) 0px 2px 8px 0px;
+}
+.cardsbox{
+    margin-left:48px;
+    margin-top:50px;
+}
+
+.btn{
+    background-color:rgb(23, 23, 153);
+    width:100px;
+}
+
+.extrabt{
+    /* margin-bottom:38px; */
+    margin-top: 24px;
+}
+.borderline{
+    /* border-top:5px solid; */
+    border-color: none;
+    border:5px dotted blue;
+    border-left:none;
+    border-right:none;
+    border-bottom: none;
+    /* border:4px none none none; */
+}
+.card-title
+{
+    color:rgb(23, 23, 153);
+    margin-top: 15%;
+}

@@ -1,0 +1,44 @@
+.bl{
+    margin-top:8% ;
+    background-color:rgb(23, 23, 153);
+  }
+ .back
+ {
+  background-color:rgb(23, 23, 153);
+   margin-left:98%;
+   margin-top: 15px;
+ } 
+ .modal-body{
+  background-color:rgb(23, 23, 153);
+  color: white;;
+  text-align: center;
+    padding-bottom: 40px;
+
+}
+.card
+{
+  border: 3px solid rgb(23, 23, 153);
+}
+.modal-header
+{
+  background-color:rgb(23, 23, 153);
+  color: white;
+  /* //margin-left:98%;; */
+  border-bottom:none;
+}
+.first{
+  height:100px;
+  width:240px;
+}
+.modal-content{
+  border:5px solid white;
+  font-size:medium;
+
+}
+.modal-header .btn-close{
+  background-color: aliceblue;
+}
+.table
+{
+  color:rgb(23, 23, 153);
+}

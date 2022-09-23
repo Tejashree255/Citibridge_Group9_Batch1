@@ -1,0 +1,42 @@
+
+  <div id="top" class="top">
+    <img class=" image girl-about-us" src="assets\images\stockMarket.jpg" alt="" width="100%" height="100%">
+    <h2 class="heading" style="margin-left:100px;">Sector Based Trade Recommendation System</h2>
+    <div  class=" login-button container md-col-5">
+      <form class="example-full-width" (ngSubmit)="openlogin()">
+      <button  *ngIf="showbtnlogin" class="btn" type="submit">
+        Login 
+      </button>
+      </form>
+      <form class="example-full-width" (ngSubmit)="openlogout()">
+      <button  *ngIf="showbtnlogout" class="btn" type="submit" 
+      data-bs-toggle="modal" data-bs-target="#logoutModal"
+      >
+         Logout 
+      </button>
+      </form>
+      <div class="login-form">
+        <router-outlet >     
+        </router-outlet>
+       
+      </div>
+    
+</div>
+</div>
+
+<div  class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog first modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+      </div>
+      <div class="modal-body" >
+        Are you sure you want to logout?
+      </div>
+      <button type="button" class="btn yesb btn-light" data-bs-dismiss="modal" >Yes</button>
+      <button type="button" class="btn nob btn-light" (click)="close()" data-bs-dismiss="modal">No</button>
+    </div>
+  </div>
+</div>  
+
+
